@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //var toonuud = [23, 53, 12, 24, 5, 6, 7, 251, 7, 34, 3835, 123];
+      var n = prompt("n toog ug");
+      var m = prompt("m toog ug");
+      console.log(n, m);
+
+      var tooluur = 0;
+      for (var i = n; i < m; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+          tooluur++;
+          console.log(i);
+        }
+      }
+      console.log("niit " + tooluur + " sh 3 bolon 5d huvaagddag too bn.");
+    </script>
+  </body>
+</html>

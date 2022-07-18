@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var N = [
+        124124, 12410, 42143, 634748, 12456, 458458, 123, 4545865, 96320,
+      ];
+      var k = prompt("k huvisagchiin utgiig ugnu uu");
+      console.log(k);
+
+      count = 0;
+      for (var element of N) {
+        if (element >= 10000 && element <= 99999 && element % k == 0) {
+          count++;
+        }
+      }
+      console.log(
+        "N elementtei massiv dotor niit k toond huvaagddag " +
+          count +
+          " sh too bn"
+      );
+    </script>
+  </body>
+</html>
