@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td {
+        border: 1px solid black;
+      }
+      td {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="body"></div>
+    <script>
+      let table = document.createElement("table");
+      let thead = document.createElement("thead");
+      let tbody = document.createElement("tbody");
+
+      table.appendChild(thead);
+      table.appendChild(tbody);
+
+      // Adding the entire table to the body tag
+      document.getElementById("body").appendChild(table);
+
+      // Creating and adding data to second row of the table
+      let row_2 = document.createElement("tr");
+      for (var i = 0; i < 10; i++) {
+        let t = document.createElement("td");
+        t.style.backgroundColor = "#1233" + i * 10;
+        row_2.appendChild(t);
+      }
+      tbody.appendChild(row_2);
+
+      let row_3 = document.createElement("tr");
+      for (var i = 0; i < 10; i++) {
+        let t = document.createElement("td");
+        t.style.backgroundColor = "#ff00" + i * 10;
+        row_2.appendChild(t);
+      }
+      tbody.appendChild(row_3);
+
+      let row_4 = document.createElement("tr");
+      for (var i = 0; i < 10; i++) {
+        let t = document.createElement("td");
+        t.style.backgroundColor = "#ff88" + i * 10;
+        row_2.appendChild(t);
+      }
+      tbody.appendChild(row_4);
+
+      // Creating and adding data to third row of
+      //   function swap(element) {
+      //     var v = [];
+      //     var i = 0;
+      //     while (element > 0) {
+      //       var uldegdel = element % 10;
+      //       v[i] = uldegdel;
+      //       element = Math.floor(element / 10);
+      //       i++;
+      //     }
+      //     console.log(v);
+      //   }
+      //   swap(1248);
+
+      //   function palindrom(word) {
+      //     for (var i = word.length - 1; i >= 0; i--) {
+      //       word += word[i];
+      //     }
+      //     console.log(word);
+      //   }
+
+      //   palindrom("12345676534");
+
+      //   function undurJil(year) {
+      //     if (year % 400 != 0 && year % 100 == 0) console.log(false);
+      //     else console.log(year % 4 == 0 ? true : false);
+      //   }
+      //   undurJil(2100);
+      //   undurJil(2200);
+      //   undurJil(2400);
+
+      //   date1 = new Date(2022, 7, 20, 10);
+      //   date2 = new Date(2022, 7, 22, 3);
+      //   var d = (date2 - date1) / 1000;
+      //   var day = Math.floor(d / 86400);
+      //   d = d % 86400;
+      //   var hours = Math.floor(d / 1440);
+      //   d = d % 1440;
+      //   var minute = Math.floor(d / 360);
+      //   d = d % 360;
+      //   console.log(
+      //     day +
+      //       " udur " +
+      //       hours +
+      //       " tsag " +
+      //       minute +
+      //       " minutes " +
+      //       d +
+      //       " seconds"
+      //   );
+    </script>
+  </body>
+</html>
